@@ -1,0 +1,4 @@
+git add .gitignore
+git add -f wisebuyer/
+git commit -m "fix: include wisebuyer folder"
+git push
