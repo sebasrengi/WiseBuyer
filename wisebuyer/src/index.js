@@ -16,3 +16,10 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+const puppeteer = require("puppeteer");
+
+(async () => {
+  // Launch the browser and open a new blank page
+  const browser = await puppeteer.launch();
+
+})();

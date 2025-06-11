@@ -1,14 +1,15 @@
 const puppeteer = require("puppeteer")
 
 ;(async () => {
-    const URL = "https://www.amazon.com/s?k=medias+de+compresi%C3%B3n+para+mujer";
+    const URL = "https://www.amazon.com";
     const browser = await puppeteer.launch({
         headless: false,
+        executablePath: '/usr/bin/chromium-browser',
     });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: "networkidle2"});
     const title = await page.title();
-    console.log('titulo de la pagina : ${title}');
+    console.log('titulo de la pagina : ${title', title);
 
     let products = [];
     let nextPage = true;
